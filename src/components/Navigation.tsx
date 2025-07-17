@@ -100,8 +100,8 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="p-6 bg-white border-b border-gray-200">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              {/* Logo with enhanced styling */}
-              <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-3 border border-blue-200">
+              {/* Logo with enhanced styling for white logo */}
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-3 border border-blue-800">
                 <img
                   src="/rbfcu-logo.svg"
                   alt="RBFCU  Online Logo"
