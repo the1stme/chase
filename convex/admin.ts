@@ -569,15 +569,36 @@ export const updateAccountBalance = mutation({
         // Create multiple transactions for bulk operation
         const transactions = [];
         let totalAmount = 0;
+        const transactionAmounts = [];
+
+        if (args.randomAmounts) {
+          // For random amounts, generate amounts that total exactly to args.amount
+          let remainingAmount = args.amount;
+
+          for (let i = 0; i < args.bulkTransactions - 1; i++) {
+            // Generate random amount between 10% and 50% of remaining amount
+            const maxAmount = Math.min(remainingAmount * 0.5, remainingAmount - (args.bulkTransactions - i - 1) * 0.01);
+            const minAmount = Math.max(0.01, remainingAmount * 0.1);
+            const randomAmount = Math.round((minAmount + Math.random() * (maxAmount - minAmount)) * 100) / 100;
+            transactionAmounts.push(randomAmount);
+            remainingAmount -= randomAmount;
+          }
+          // Last transaction gets the remaining amount
+          transactionAmounts.push(Math.round(remainingAmount * 100) / 100);
+        } else {
+          // For fixed amounts, divide total amount evenly
+          const baseAmount = Math.round((args.amount / args.bulkTransactions) * 100) / 100;
+          const remainder = Math.round((args.amount - (baseAmount * args.bulkTransactions)) * 100) / 100;
+
+          for (let i = 0; i < args.bulkTransactions; i++) {
+            // Add remainder to the last transaction to ensure exact total
+            const amount = i === args.bulkTransactions - 1 ? baseAmount + remainder : baseAmount;
+            transactionAmounts.push(amount);
+          }
+        }
 
         for (let i = 0; i < args.bulkTransactions; i++) {
-          let transactionAmount = args.amount;
-
-          if (args.randomAmounts) {
-            // Generate random amount between 10% and 200% of base amount
-            const multiplier = 0.1 + Math.random() * 1.9;
-            transactionAmount = Math.round(args.amount * multiplier * 100) / 100;
-          }
+          const transactionAmount = transactionAmounts[i];
 
           // Determine actual amount based on type
           const actualAmount = args.type === "add" ? transactionAmount : -transactionAmount;

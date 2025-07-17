@@ -406,7 +406,7 @@ const BalanceUpdateModal: React.FC<{
                 onChange={(e) => setIsBulk(e.target.checked)}
                 className="rounded"
               />
-              <span className="text-sm font-medium">Split into multiple transactions</span>
+              <span className="text-sm font-medium">Split total amount into multiple transactions</span>
             </label>
 
             {isBulk && (
@@ -481,10 +481,13 @@ const BalanceUpdateModal: React.FC<{
             <div className="bg-blue-50 p-3 rounded text-sm">
               <p><strong>Preview:</strong></p>
               {randomAmounts ? (
-                <p>{bulkTransactions} transactions with random amounts totaling ${parseFloat(amount).toFixed(2)}</p>
+                <p>{bulkTransactions} transactions with random amounts totaling exactly ${parseFloat(amount).toFixed(2)}</p>
               ) : (
-                <p>{bulkTransactions} transactions of ${(parseFloat(amount) / parseInt(bulkTransactions)).toFixed(2)} each</p>
+                <p>{bulkTransactions} transactions of approximately ${(parseFloat(amount) / parseInt(bulkTransactions)).toFixed(2)} each, totaling exactly ${parseFloat(amount).toFixed(2)}</p>
               )}
+              <p className="text-gray-600 mt-1">
+                Total {type === 'add' ? 'added to' : 'removed from'} account: ${parseFloat(amount).toFixed(2)}
+              </p>
             </div>
           )}
 
