@@ -103,8 +103,8 @@ export const Navigation: React.FC<NavigationProps> = ({
               {/* Logo with enhanced styling */}
               <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-3 border border-blue-200">
                 <img
-                  src="/logo_pnc.png"
-                  alt="PNC Online Logo"
+                  src="/rbfcu-logo.svg"
+                  alt="RBFCU  Online Logo"
                   className="h-10 w-auto object-contain"
                 />
               </div>

@@ -59,7 +59,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onLoginSuccess }) => {
           <div className="inline-flex items-center justify-center mb-6 p-4 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full">
             <Shield className="h-12 w-12 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2">PNC Admin Portal</h1>
+          <h1 className="text-3xl font-bold text-white mb-2">RBFCU  Admin Portal</h1>
           <p className="text-slate-300 text-lg font-medium">Secure administrative access</p>
         </div>
 

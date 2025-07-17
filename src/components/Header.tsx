@@ -13,8 +13,8 @@ export const Header: React.FC<HeaderProps> = ({ onLogout }) => {
         {/* Logo with white rounded container */}
         <div className="bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
           <img
-            src="/logo_pnc.png"
-            alt="PNC Online Logo"
+            src="/rbfcu-logo.svg"
+            alt="RBFCU  Online Logo"
             className="h-16 w-auto object-contain"
           />
         </div>

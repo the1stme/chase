@@ -22,7 +22,7 @@ export const mockUser: User = {
 export const mockAccounts: Account[] = [
   {
     id: 'acc-001',
-    name: 'PNCSHARE',
+    name: 'RBFCU SHARE',
     type: 'checking',
     balance: 6123.00,
     accountNumber: '****1234',

@@ -63,7 +63,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
         {/* Enhanced Logo */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center mb-8">
-            <img src="/logo_pnc.png" alt="PNC Online Logo" className="h-24" />
+            <img src="/rbfcu-logo.svg" alt="RBFCU  Online Logo" className="h-24" />
           </div>
           <p className="text-blue-100 text-lg font-medium drop-shadow-lg">Secure access to your financial future</p>
         </div>
@@ -164,7 +164,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
         {/* Legal Text */}
         <div className="text-center mt-8 space-y-2">
-          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 PNC Online </p>
+          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 RBFCU  Online </p>
           <p className="text-blue-300 text-xs drop-shadow-lg">
             Member FDIC. All Rights Reserved.
           </p>

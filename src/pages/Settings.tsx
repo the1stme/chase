@@ -320,10 +320,10 @@ export const Settings: React.FC<SettingsProps> = ({ user, onUserUpdate }) => {
 
       {/* App Info */}
       <div className="bg-gray-50 rounded-xl p-4 text-center">
-        <div className="text-sm text-gray-600 mb-2">PNCMobile</div>
+        <div className="text-sm text-gray-600 mb-2">RBFCU Mobile</div>
         <div className="text-xs text-gray-500">Version 2.1.4 • Build 2024.1</div>
         <div className="text-xs text-gray-500 mt-2">
-          © 2024 PNCCredit Union. All rights reserved.
+          © 2024 RBFCU Credit Union. All rights reserved.
         </div>
         <div className="text-xs text-gray-500">
           Federally insured by NCUA. Equal Housing Lender.
