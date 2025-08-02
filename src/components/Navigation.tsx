@@ -100,12 +100,12 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="p-6 bg-white border-b border-gray-200">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              {/* Logo with enhanced styling for white logo */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-3 border border-blue-800">
+              {/* Bank of America Logo */}
+              <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
                 <img
-                  src="/rbfcu-logo.svg"
-                  alt="RBFCU  Online Logo"
-                  className="h-10 w-auto object-contain"
+                  src="/bank-of-america-logo.svg"
+                  alt="Bank of America Online Banking"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
             </div>
