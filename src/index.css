@@ -77,15 +77,15 @@
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, #003f80 0%, #0065B3 100%);
+  background: linear-gradient(135deg, #0d5ba0 0%, #117ACA 100%);
 }
 
 .gradient-secondary {
-  background: linear-gradient(135deg, #E61030 0%, #b91c1c 100%);
+  background: linear-gradient(135deg, #08365f 0%, #0b4b86 100%);
 }
 
 .shadow-glow {
-  box-shadow: 0 0 20px rgba(0, 101, 179, 0.3);
+  box-shadow: 0 0 20px rgba(17, 122, 202, 0.3);
 }
 
 .transition-all-smooth {

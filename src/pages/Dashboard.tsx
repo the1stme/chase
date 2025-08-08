@@ -65,9 +65,9 @@ export const Dashboard: React.FC<DashboardProps> = ({
   };
 
   return (
-    <div className="p-4 md:p-6 pb-32 md:pb-6 space-y-6 md:space-y-8 animate-fade-in">
+    <div className="p-3 md:p-6 pb-20 md:pb-8 space-y-4 md:space-y-8 animate-fade-in max-w-7xl mx-auto">
       {/* Welcome Section */}
-      <div className="gradient-primary rounded-2xl md:rounded-3xl p-6 md:p-8 text-white shadow-glow animate-slide-up">
+      <div className="gradient-primary rounded-2xl md:rounded-3xl p-5 md:p-8 text-white shadow-glow animate-slide-up">
         <div className="flex items-center justify-between mb-4 md:mb-6">
           <div>
             <h1 className="text-2xl md:text-3xl font-black mb-1 md:mb-2">
@@ -80,18 +80,18 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </div>
         </div>
         
-        <div className="bg-white/20 backdrop-blur-sm rounded-xl md:rounded-2xl p-4 md:p-6">
-          <div className="flex items-center space-x-2 mb-2">
+        <div className="bg-white/25 backdrop-blur-md rounded-xl md:rounded-2xl p-4 md:p-6">
+          <div className="flex items-center space-x-2 mb-1 md:mb-2">
             <Eye className="text-white/80" size={18} />
             <div className="text-xs md:text-sm opacity-80 font-medium">Total Available Balance</div>
           </div>
-          <div className="text-2xl md:text-4xl font-black">{formatCurrency(totalBalance)}</div>
+          <div className="text-[28px] md:text-4xl font-black tracking-tight">{formatCurrency(totalBalance)}</div>
           <div className="text-xs md:text-sm opacity-80 mt-1 md:mt-2">+2.4% from last month</div>
         </div>
       </div>
 
       {/* Quick Actions */}
-      <div className="grid grid-cols-2 gap-3 md:gap-4">
+      <div className="grid grid-cols-2 gap-2.5 md:gap-4">
         <button
           onClick={() => onTabChange('transfers')}
           className="glass-effect rounded-xl md:rounded-2xl p-4 md:p-6 hover:shadow-glow transition-all-smooth transform hover:scale-105 animate-scale-in"

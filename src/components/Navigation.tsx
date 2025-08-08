@@ -100,12 +100,12 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="p-6 bg-white border-b border-gray-200">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              {/* Bank of America Logo */}
-              <div className="bg-white rounded-xl p-3 border border-gray-200 shadow-sm">
+              {/* App Logo (Chase) */}
+              <div className="p-0">
                 <img
-                  src="/bank-of-america-logo.svg"
-                  alt="Bank of America Online Banking"
-                  className="h-8 w-auto object-contain"
+                  src="/newheaderlogo.svg"
+                  alt="Chase Online Banking"
+                  className="h-7 md:h-8 w-auto object-contain"
                 />
               </div>
             </div>

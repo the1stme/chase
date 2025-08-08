@@ -47,7 +47,7 @@ function AppLayout({ user, onLogout, onTabChange }: { user: User; onLogout: () =
           onLogout={onLogout}
           isAdmin={user?.is_admin}
         />
-        <main className="flex-1 p-6 md:ml-80 pt-20 md:pt-6">
+        <main className="flex-1 p-3 md:p-6 md:ml-80 pt-6 md:pt-6">
           <Outlet />
         </main>
       </div>

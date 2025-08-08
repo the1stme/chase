@@ -38,25 +38,25 @@ export const AccountCard: React.FC<AccountCardProps> = ({ account, onClick }) =>
   const AccountIcon = getAccountIcon(account.type);
 
   return (
-    <div 
-      className="glass-effect rounded-3xl p-6 hover:shadow-glow transition-all-smooth cursor-pointer transform hover:scale-105 animate-fade-in"
+    <div
+      className="glass-effect rounded-3xl p-5 md:p-6 hover:shadow-glow transition-all-smooth cursor-pointer transform hover:scale-105 animate-fade-in"
       onClick={() => onClick(account.id)}
     >
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-4">
-          <div className={`w-14 h-14 bg-gradient-to-r ${getAccountGradient(account.type)} rounded-2xl flex items-center justify-center shadow-lg`}>
+          <div className={`w-12 h-12 md:w-14 md:h-14 bg-gradient-to-r ${getAccountGradient(account.type)} rounded-2xl flex items-center justify-center shadow-lg`}>
             <AccountIcon className="text-white" size={24} />
           </div>
           <div>
-            <h3 className="font-bold text-gray-900 text-lg">{account.name}</h3>
-            <p className="text-sm text-gray-500 font-medium">{account.accountNumber}</p>
+            <h3 className="font-bold text-gray-900 text-[15px] md:text-lg tracking-tight">{account.name}</h3>
+            <p className="text-[12px] md:text-sm text-gray-500 font-medium">{account.accountNumber}</p>
           </div>
         </div>
         <ChevronRight className="text-gray-400 transition-transform group-hover:translate-x-1" size={24} />
       </div>
 
       <div className="mb-6">
-        <div className={`text-3xl font-black ${account.type === 'credit' && account.balance < 0 ? 'text-red-600' : 'text-gray-900'}`}>
+        <div className={`text-[22px] md:text-3xl font-black tracking-tight ${account.type === 'credit' && account.balance < 0 ? 'text-red-600' : 'text-gray-900'}`}>
           {account.type === 'credit' && account.balance < 0 ? '-' : ''}
           {formatCurrency(account.balance)}
         </div>

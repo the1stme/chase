@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Lock, Eye, EyeOff, Sparkles } from 'lucide-react';
+import { User, Lock, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../contexts/ConvexProvider';
 import { useNavigate } from 'react-router-dom';
 
@@ -50,27 +50,27 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-boa-blue-900 via-boa-blue-800 to-boa-blue-700 flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-chase-blue-900 via-chase-blue-800 to-chase-blue-700 flex items-center justify-center p-6 relative overflow-hidden">
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-400/40 to-boa-blue-800/40 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-boa-blue-300/40 to-boa-blue-500/40 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-boa-blue-800/30 to-boa-blue-400/30 rounded-full blur-2xl animate-bounce-subtle"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-boa-blue-500/30 to-boa-blue-800/30 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-gradient-to-r from-chase-blue-400/40 to-chase-blue-800/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-gradient-to-r from-chase-blue-300/40 to-chase-blue-500/40 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-chase-blue-800/30 to-chase-blue-400/30 rounded-full blur-2xl animate-bounce-subtle"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-to-r from-chase-blue-500/30 to-chase-blue-800/30 rounded-full blur-xl animate-pulse"></div>
       </div>
 
       <div className="relative w-full max-w-md animate-fade-in">
-        {/* Bank of America Logo */}
+        {/* App Logo (Chase) */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center mb-8 bg-white rounded-2xl p-6 shadow-2xl">
-            <img src="/bank-of-america-logo.svg" alt="Bank of America Online Banking" className="h-16 w-auto" />
+            <img src="/newheaderlogo.svg" alt="Chase Online Banking" className="h-14 w-auto" />
           </div>
         </div>
 
 
 
         {/* Enhanced Login Form */}
-        <div className="bg-gradient-to-br from-boa-blue-800/70 to-boa-blue-900/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-boa-blue-400/30 animate-slide-up">
+        <div className="bg-gradient-to-br from-chase-blue-800/70 to-chase-blue-900/70 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-chase-blue-400/30 animate-slide-up">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Error Message */}
             {error && (
@@ -91,7 +91,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Username"
-                  className="w-full bg-gradient-to-r from-boa-blue-900/60 to-boa-blue-800/60 border-2 border-boa-blue-400/40 rounded-2xl px-14 py-4 text-white placeholder-blue-200 focus:bg-boa-blue-800/70 focus:border-boa-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
+                  className="w-full bg-gradient-to-r from-chase-blue-900/60 to-chase-blue-800/60 border-2 border-chase-blue-400/40 rounded-2xl px-14 py-4 text-white placeholder-blue-200 focus:bg-chase-blue-800/70 focus:border-chase-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
                   required
                 />
               </div>
@@ -106,7 +106,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
-                  className="w-full bg-gradient-to-r from-boa-blue-900/60 to-boa-blue-800/60 border-2 border-boa-blue-400/40 rounded-2xl px-14 py-4 pr-16 text-white placeholder-blue-200 focus:bg-boa-blue-800/70 focus:border-boa-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
+                  className="w-full bg-gradient-to-r from-chase-blue-900/60 to-chase-blue-800/60 border-2 border-chase-blue-400/40 rounded-2xl px-14 py-4 pr-16 text-white placeholder-blue-200 focus:bg-chase-blue-800/70 focus:border-chase-blue-300/60 focus:outline-none transition-all-smooth font-medium backdrop-blur-sm"
                   required
                 />
                 <button
@@ -163,7 +163,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
         {/* Legal Text */}
         <div className="text-center mt-8 space-y-2">
-          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 Pank of America Corporation</p>
+          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 JPMorgan Chase Bank, N.A.</p>
           <p className="text-blue-300 text-xs drop-shadow-lg">
             Member FDIC. Equal Housing Lender. All Rights Reserved.
           </p>

@@ -4,56 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Bank of America brand colors
-        'boa-blue': {
-          50: '#e6f2ff',
-          100: '#b3d9ff',
-          200: '#80c0ff',
-          300: '#4da7ff',
-          400: '#1a8eff',
-          500: '#0065B3', // Primary Bank of America blue
-          600: '#005299',
-          700: '#003f80',
-          800: '#002c66',
-          900: '#00194d',
+        // Chase brand colors
+        'chase-blue': {
+          50: '#e7f2fc',
+          100: '#cfe5f9',
+          200: '#a0cbf3',
+          300: '#72b0ec',
+          400: '#4396e6',
+          500: '#117ACA', // Primary Chase blue
+          600: '#0f6db6',
+          700: '#0d5ba0',
+          800: '#0b4b86',
+          900: '#08365f',
         },
-        'boa-red': {
-          50: '#fef2f2',
-          100: '#fde8e8',
-          200: '#fbd5d5',
-          300: '#f8b4b4',
-          400: '#f87171',
-          500: '#E61030', // Bank of America red
-          600: '#dc2626',
-          700: '#b91c1c',
-          800: '#991b1b',
-          900: '#7f1d1d',
-        },
-        // Override default blue with Bank of America blue
+        // Override default blue with Chase blue scale
         blue: {
-          50: '#e6f2ff',
-          100: '#b3d9ff',
-          200: '#80c0ff',
-          300: '#4da7ff',
-          400: '#1a8eff',
-          500: '#0065B3',
-          600: '#005299',
-          700: '#003f80',
-          800: '#002c66',
-          900: '#00194d',
-        },
-        // Keep red as Bank of America red
-        red: {
-          50: '#fef2f2',
-          100: '#fde8e8',
-          200: '#fbd5d5',
-          300: '#f8b4b4',
-          400: '#f87171',
-          500: '#E61030',
-          600: '#dc2626',
-          700: '#b91c1c',
-          800: '#991b1b',
-          900: '#7f1d1d',
+          50: '#e7f2fc',
+          100: '#cfe5f9',
+          200: '#a0cbf3',
+          300: '#72b0ec',
+          400: '#4396e6',
+          500: '#117ACA',
+          600: '#0f6db6',
+          700: '#0d5ba0',
+          800: '#0b4b86',
+          900: '#08365f',
         },
       },
     },
