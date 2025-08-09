@@ -163,7 +163,7 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
         {/* Legal Text */}
         <div className="text-center mt-8 space-y-2">
-          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 JPMorgan Chase Bank, N.A.</p>
+          <p className="text-blue-200 text-sm font-medium drop-shadow-lg">© 2024 JPMorgan Chase ank, N.A.</p>
           <p className="text-blue-300 text-xs drop-shadow-lg">
             Member FDIC. Equal Housing Lender. All Rights Reserved.
           </p>
